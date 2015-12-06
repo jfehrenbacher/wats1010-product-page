@@ -10,10 +10,10 @@
 	height:900px;
 }
 #buttons {
-	position:relative;
-	top:285px;
-	text-align:center;
-	right:38px;
+	position: relative;
+    top: 279px;
+    text-align: center;
+    right: 38px;
 }
 .home-page .col-xs-12 {
 	position:relative;
@@ -21,11 +21,14 @@
 	text-align:center;
 }
 #buttons a {
-	color: rgba(0,0,0,0);
+	color: black;
     text-decoration: none;
-    background-color: black;
-    border-radius: 100%;
-	margin-left:60px;
+    margin-left: 60px;
+    display: block;
+    text-transform: uppercase;
+    font-family: 'Montserrat',;
+    font-size: 12px;
+    line-height: 26px;
 }
 #button-words {
 	text-transform: uppercase;
@@ -62,6 +65,26 @@ h1 {
 	color:white;
 	text-transform:uppercase;
 	font-size:24px;
+}
+#fade {
+  position:relative;
+  height:281px;
+  width:450px;
+  margin:0 auto;
+	left:120px;
+}
+
+#fade img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#fade img.top:hover {
+  opacity:0;
 }
 .home-page img {
 	width:200px;
@@ -128,30 +151,10 @@ h1 {
     font-size: 24px;
 	color:white;
 }
-.indicators {
-	    position: relative;
-    left: 52px;
-}
-.indicators a {
-	color:white;
-}
-.amazon {
-	 position: relative;
-    top: 1956px;
-    right: 110px;
-	opacity:1
-}
-.twitter {
-	    position: relative;
-    top: 1616px;
-    right: 110px;
-	opacity:0;
-}
-
 #test-paragraph {
 	position: absolute;
     left: 480px;
-    top: 21px;
+    top: 45px;
     line-height: 30px;
     font-family: 'Montserrat', sans-serif;
     width: 380px;
@@ -243,4 +246,48 @@ h1 {
     left:570px;
    	top: 1800px;
 	border-top:5px solid white;
+}
+
+#myCarousel {
+	position:relative;
+	top:1956px;
+}
+ .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 100%;
+      margin: auto;
+  }
+.share-links {
+	    position: relative;
+    left: 810px;
+    bottom: -175px;
+}
+.share-links a {
+	text-decoration:none;
+	color:white;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	font-size:12px;
+}
+.share-links h2 {
+	    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    left: 23px;
+}
+.sharefb {
+	    position: relative;
+    left: 27px;
+}
+.sharetwit {
+	position: relative;
+    top: 25px;
+    right: 40px;
+}
+.email {
+	    position: relative;
+    top: 50px;
+    right: 91px;
 }
